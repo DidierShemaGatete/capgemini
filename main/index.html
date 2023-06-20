@@ -7,16 +7,18 @@
 </head>
 <body>
 
-    <header class="relative">
+    <header class="">
 
-        <div class="nav bg-contain bg-no-repeat h-full w-full" style="background-image: url('./images/ITER-featured-image.jpg');">
+        <!-- ON small screen header -->
+
+        <div class="md:hidden bg-contain bg-no-repeat h-full w-full" style="background-image: url('./images/ITER-featured-image.jpg');">
             <div class="sticky top-0 z-10">
                 <div class="flex justify-between relative bg-[rgba(0,0,0,0.1)] p-5 ">
                     <div class="w-1/2">
                         <img class="w-"src="./images/logo-white.svg" alt="">
                     </div>
                     <div class="flex gap-3">
-                        <img class="w-5" src="./images/icon-search-dark.svg" alt="">
+                        <img class="w-5" src="./images/search-magnifying-glass-svgrepo-com.svg" alt="">
                         <img class="w-5" src="./images/menu-list-1527-svgrepo-com.svg"/>
                     </div>
                 </div>
@@ -24,27 +26,91 @@
 
         </div> 
 
-        <div class="bg-[rgba(24,88,122,0.9)] absolute rounded-sm shadow-2xl bottom-1/2 -mt-10  mx-6">
+        <!-- ON md screen header -->
+
+        <div class="hidden md:block bg-cover bg-no-repeat h-full w-full relative " style="background-image: url('./images/top\ banner\ on\ md\ screen.webp');">
+
+            <div class="sticky top-0 z-10">
+
+                <div class=" bg-[rgba(0,0,0,0.1)] p-5">
+
+                    <div class="flex justify-end gap-7 p-5 text-white group">
+                        <p><a href="">Contact Us</a></p>
+                        <p><a href="">Global Investors</a></p>
+                        <p><a href="">Global | EN</a></p>
+                    </div>
+
+                    <div class="flex justify-between ">
+                        <div class="flex text-white gap-6 ">
+                            <img class="w-1/2 "src="./images/logo-white.svg" alt="">
+                        
+                            <p><a href="">Insights</a></p>
+                            <p><a href="">Industries</a></p>
+                            <p><a href="">Services</a></p>
+                            <p><a href="">Careers</a></p>
+                            <p><a href="">News</a></p>
+                            <p><a href="">About Us</a></p>
+                        </div>
+
+                        <div class="flex gap-6">
+                            <p class="text-white"><a href="">Search</a></p>
+                            <img class="w-7 -mt-5" src="./images/search-magnifying-glass-svgrepo-com.svg" alt="">
+                            
+                        </div>
+
+
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+        </div> 
+
+
+
+
+
+            <!-- Blue box on Mobile screen  -->
+
+        <div class="md:hidden  bg-[rgba(24,88,122,0.9)] rounded-sm shadow-2xl absolute bottom-1/3 mx-6">
             <div class="flex-col gap-2  hover:bg-cyan-500 hover:text-black">
-                <h1 class="text-white text-left font-semibold  text-4xl my-10 mx-7" >
-                    NEW ENERGY FOR A GROWING 
+                <h1 class="text-white text-left font-semibold  text-4xl my-10 mx-7 py-10 " >
+                    WHY CONSUMERS LOVE GENERATIVE AI </h1>
                     
-                </h1>
-                <p class="text-white text-left font-semibold my-1">WORLD</p>
+              
             </div>
            
 
         </div>
 
+        
+        
+
+
 
 
     </header>
 
+    <!-- blue box in header on big screen -->
+
+    <div class="hidden md:inline-block py-20 absolute top-1/4 bg-[rgba(24,88,122,0.9)] rounded-sm shadow-2xl  mx-6 w-1/2 mb-20">
+        <div class="  hover:bg-cyan-500 hover:text-black w-3/4">
+            <h1 class="text-white text-left font-semibold  text-4xl my-10" >
+                WHY CONSUMERS LOVE GENERATIVE AI </h1>
+                
+          
+        </div>
+       
+
+    </div>
+
 
     <div>
-        <div class="relative mx-4 ">
-            <div >
-                <img class="hover:space-105" src="./images/Capgemini_people_diversity_inclusion-1-e1632829912313 (1).jpg" alt="">
+        <div class="relative mx-4 md:my-20">
+            <div class="overflow-hidden">
+                <img class="hover:scale-110 duration-200 " src="./images/Capgemini_people_diversity_inclusion-1-e1632829912313 (1).jpg" alt="">
             </div>
             
         
@@ -54,8 +120,8 @@
                 <h1 class="text-base font-semibold ml-5 mt-5" >Pride in progress</h1>
 
                 <p class="mb-32 text-base font-thin ml-5">Shaping positive futures for our people, planet, society</p>
-
-                <img class="ml-64 my-5" src="./images/icon-more-small-dark.svg" alt="">
+                
+                <img class="ml-64 my-5 hover:scale-105" src="./images/icon-more-small-dark.svg" alt="">
 
             </div>
             
@@ -73,7 +139,10 @@
 
     <div>
         <div class="relative">
-            <img src="./images/DotCom_Banner_2880X1800.jpg" alt="">
+
+            <div class="overflow-hidden">
+                <img class="hover:scale-110 duration-300 "src="./images/DotCom_Banner_2880X1800.jpg" alt="">
+            </div>
         
 
             <div class="bg-white w-4/5 p-10 absolute top-3/4 mx-10  shadow-2xl">
@@ -91,8 +160,11 @@
 
     <div class="mt-40">
         <div class="relative">
-            <img src="./images/world-wealth-report-2023.jpg" alt="">
-        
+
+            <div class="overflow-hidden">
+                <img class="hover:scale-110 duration-300"src="./images/world-wealth-report-2023.jpg" alt="">
+            </div>
+            
 
             <div class="bg-white mx-10 absolute top-3/4 p-10  shadow-2xl">
                 <h1 class="mb-5">Capgeni research Institute</h1>
@@ -109,8 +181,12 @@
 
     <div class="mt-48">
         <div class="relative">
-            <img src="./images/Capgemin_Inside-Stories_Women-in-rugby_Hero.jpg" alt="">
-        
+
+            <div class="overflow-hidden">
+                <img class="hover:scale-110 duration-300" src="./images/Capgemin_Inside-Stories_Women-in-rugby_Hero.jpg" alt="">
+
+            </div>
+            
 
             <div class="bg-white w-4/5 p-10 absolute top-3/4 mx-10  shadow-2xl">
                 <h1 class="mb-5">Capgeni research Institute</h1>
@@ -156,24 +232,25 @@
     <div class="ml-5 my-10">
         <h1 class="text-xl">Recent Client Stories</h1>
     </div>
+    <section class="overflow-hidden">
+        <div class="bg-contain bg-no-repeat w-full h-full relative hover:scale-110 duration-300 md:w-full md:bg-cover" style="background-image: url('./images/Eramet_client_story_Dotcom-banner_2880x1800px.jpg');">
 
-    <div class="bg-contain bg-no-repeat w-full h-full relative" style="background-image: url('./images/Eramet_client_story_Dotcom-banner_2880x1800px.jpg');">
+            <!-- <div class="absolute top-1/3">
+                <button class=" w-20 h-10 bg-white rounded-xl"></button>
+            </div> -->
+            
+        <div class="bg-white shadow-2xl mx-6 absolute bottom-1/4 md:w-1/2 md:bottom-7 md:left-28">
 
-        <!-- <div class="absolute top-1/3">
-            <button class=" w-20 h-10 bg-white rounded-xl"></button>
-        </div> -->
-        
-       <div class="bg-white shadow-2xl mx-6 absolute bottom-1/4 -mt-10 ">
+                <h1 class=" mt-5 px-2 font-serif">Fluidra builds a new model for website design</h1>
+                <h2 class="py-2 mx-2 ">Fluidra partnered with Capgemini to implement Adobe Experience Manager on AWS infrastructure, thereby providing a standardized skeleton on which new websites could be built</h2>
 
-            <h1 class=" mt-5 px-6 font-serif">Fluidra builds a new model for website design</h1>
-            <h2 class="p-6 ">Fluidra partnered with Capgemini to implement Adobe Experience Manager on AWS infrastructure, thereby providing a standardized skeleton on which new websites could be built</h2>
+                <div class="-mt-1.5 mb-5 text-center "><button class="border py-2 px-16 rounded-full">Read more</button></div>
 
-            <div class="mt-10 mb-5 text-center "><button class="border py-3 px-16 rounded-full">Read more</button></div>
-
-       </div>
+        </div>
 
 
-    </div>
+        </div>
+    </section>
 
 
     <div>
@@ -236,7 +313,9 @@
 
     <div class="sm:flex justify-between">
         <div class="mx-5 shadow-2xl my-5 sm:1/2">
-            <img src="./images/ITER-featured-image.jpg" alt="">
+            <div class="overflow-hidden">
+                <img class="hover:scale-110 duration-300" src="./images/ITER-featured-image.jpg" alt="">
+            </div>
             <div class="p-10 leading-8">
                 <p>Future-shaping projects</p>
                 <p class="text-lg">New energy for a growing world</p>
@@ -246,8 +325,12 @@
 
 
         <div class="sm:flex-col gap-7 sm:1/2">
-            <div class="mx-5 shadow-2xl my-5">
-                <img src="./images/Capgemini_Services_Data-and-AI_2.jpg" alt="">
+            <div class="mx-5 shadow-2xl my-5 md:flex-row-reverse">
+
+                <div class="overflow-hidden">
+                    <img class="hover:scale-110 duration-300" src="./images/Capgemini_Services_Data-and-AI_2.jpg" alt="">
+                </div>
+
                 <div class="p-10 leading-8">
                     <p>Future-shaping projects</p>
                     <p class="text-lg">New energy for a growing world</p>
@@ -257,7 +340,9 @@
 
             
             <div class="mx-5 shadow-2xl my-5">
-                <img src="./images/Capgemini-Header-1440x900-1.webp" alt="">
+                <div class="overflow-hidden">
+                    <img class="hover:scale-110 duration-300" src="./images/Capgemini-Header-1440x900-1.webp" alt="">
+                </div>
                 <div class="p-10 leading-8">
                     <p>Future-shaping projects</p>
                     <p class="text-lg">New energy for a growing world</p>
@@ -301,23 +386,28 @@
 
     <div class="0 mx-5">
 
-        <div class="p-5 -mx-5">
+        <div class="p-5 -mx-5 md:flex justify-center">
             <img src="./images/logo.svg" alt="">
         </div>
 
-        <ul class="leading-9 font-medium ">
-            <li>insights</li>
-            <li>Industries</li>
-            <li>Services</li>
-            <li>Careers</li>
-            <li>About Us </li>
-            <li>investors</li>
-            <li>Terms of Use </li>
-            <li>Accessibility</li>
-            <li>Privacy Policy</li>
-            <li>Security Vulnerability notification</li>
-            <li>Cookie settings</li>
-            <li>Cookie Policy</li>
+        <ul class="leading-9  md:flex justify-between">
+            <div class="">
+                <li>insights</li>
+                <li>Industries</li>
+                <li>Services</li>
+                <li>Careers</li>
+                <li>About Us </li>
+                <li>investors</li>
+            </div>
+
+            <div>
+                <li>Terms of Use </li>
+                <li>Accessibility</li>
+                <li>Privacy Policy</li>
+                <li>Security Vulnerability notification</li>
+                <li>Cookie settings</li>
+                <li>Cookie Policy</li>
+            </div>
 
 
         </ul>
@@ -326,11 +416,13 @@
 
 
         <div class="flex-col gap-5">
-            <h1 class="p-5">Our brands:</h1>
+            <h1 class="p-5 md:font-semibold md:text-2xl md:text-center md:my-10">Our brands:</h1>
 
-            <img src="./images/logo.svg" alt="">
-            <img src="./images/logo-invent-white.svg" alt="">
-            <img src="./images/Logo_Sogeti.svg" alt="">
+            <div class="md:flex justify-around ">
+                <img src="./images/logo.svg" alt="">
+                <img class="bg-slate-500 rounded-md"src="./images/logo-invent-white.svg" alt="">
+                <img src="./images/Logo_Sogeti.svg" alt="">
+            </div>
         </div>
 
         <div class="border-b-2 p-10"></div>
@@ -352,8 +444,9 @@
             <img class="w-9 " src="./images/flickr-svgrepo-com (2).svg" alt="">
         </div>
         
-        <div class="my-2 ">
-            <p>All rights reserved by Capgemini. Copyright  &copy;2023</p>
+        <div >
+            <p class="my-2 mx-auto
+            md:mx-auto inline-block">All rights reserved by Capgemini. Copyright  &copy;2023</p>
         </div>
 
         
